@@ -5,7 +5,7 @@ const EstateCard = () => {
   return (
     <div className="p-1">
       <div
-        className="bg-red-600 h-96 w-96 flex items-end rounded-sm  border-mainDarkBrown"
+        className="h-96 w-96 flex items-end rounded-sm  border-mainDarkBrown"
         style={{ backgroundImage: `url(${Home})` }}
       >
         <div className="p-4">
