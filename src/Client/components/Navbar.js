@@ -6,7 +6,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-mainLightBrown">
+      <nav className="bg-mainLightBrown top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -133,12 +133,6 @@ function Navbar() {
           )}
         </Transition>
       </nav>
-
-      <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
-        </div>
-      </header>
     </div>
   );
 }
