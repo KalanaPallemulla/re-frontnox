@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.AF {
-  font-family: "Work Sans", sans-serif;
-  font-weight: bold;
-}
-
-.homeHeight {
-  height: 500px;
-}
-.homeHeightCol2 {
-  height: 700px;
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -26,4 +14,32 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.AF {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+}
+
+.homeHeight {
+  height: 500px;
+}
+.homeHeightCol2 {
+  height: 700px;
+}
+
+.bWidth {
+  width: 600px;
+}
+
+.bHeight {
+  height: 100px;
+}
+
+.abCardHeight {
+  height: 50vh;
+}
+
+.abCardHeight2 {
+  height: 25vh;
 }

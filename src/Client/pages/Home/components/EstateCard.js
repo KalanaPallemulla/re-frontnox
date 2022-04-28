@@ -3,7 +3,7 @@ import Home from "../../../assets/Home3.jpeg";
 
 const EstateCard = () => {
   return (
-    <div className="p-1">
+    <div className="p-1 bg">
       <div
         className="h-96 w-96 flex items-end rounded-sm  border-mainDarkBrown"
         style={{ backgroundImage: `url(${Home})` }}

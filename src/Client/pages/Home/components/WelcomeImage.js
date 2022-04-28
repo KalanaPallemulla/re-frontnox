@@ -30,8 +30,8 @@ const WelcomeImage = () => {
           backgroundSize: "absolute",
         }}
       >
-        <div className="AF text-gray-600 md:text-gray-700 bg-white flex homeHeightCol2 opacity-75 md:opacity-50">
-          <div className="m-auto p-16">
+        <div className="AF text-gray-600 md:text-gray-700 bg-white flex homeHeightCol2 opacity-75">
+          <div className="m-auto p-16 text-sm md:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incid alor the old familer olfre idunt ut labore
             ellt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

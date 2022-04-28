@@ -1,14 +1,18 @@
 import React from "react";
 import WelcomeImage from "./components/WelcomeImage";
-import HomeTopic from "./components/HomeTopic";
-import EstateCard from "./components/EstateCard";
-import { ScrollMenu } from "react-horizontal-scrolling-menu";
+// import HomeTopic from "./components/HomeTopic";
+// import EstateCard from "./components/EstateCard";
+// import { ScrollMenu } from "react-horizontal-scrolling-menu";
+import SubCard from "./components/SubCard";
+import AboutComponent from "./components/AboutComponent";
 
 const HomeContainer = () => {
   return (
     <div className="">
       <WelcomeImage />
-      <div>
+      <SubCard />
+      <AboutComponent />
+      {/* <div className="mt-36">
         <HomeTopic topic="For Rental" />
         <div className="px-2 pt-4">
           <ScrollMenu>
@@ -31,7 +35,7 @@ const HomeContainer = () => {
             <EstateCard />
           </ScrollMenu>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
