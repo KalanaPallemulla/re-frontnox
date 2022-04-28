@@ -5,6 +5,8 @@ import WelcomeImage from "./components/WelcomeImage";
 // import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import SubCard from "./components/SubCard";
 import AboutComponent from "./components/AboutComponent";
+import SellComponent from "./components/SellComponent";
+import RentComponent from "./components/RentComponent";
 
 const HomeContainer = () => {
   return (
@@ -12,6 +14,8 @@ const HomeContainer = () => {
       <WelcomeImage />
       <SubCard />
       <AboutComponent />
+      <SellComponent />
+      <RentComponent />
       {/* <div className="mt-36">
         <HomeTopic topic="For Rental" />
         <div className="px-2 pt-4">
