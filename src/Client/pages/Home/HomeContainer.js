@@ -8,6 +8,7 @@ import AboutComponent from "./components/AboutComponent";
 import SellComponent from "./components/SellComponent";
 import RentComponent from "./components/RentComponent";
 import Footer from "../../components/Footer";
+import Feedback from "./components/Feedback";
 
 const HomeContainer = () => {
   return (
@@ -19,6 +20,7 @@ const HomeContainer = () => {
         <SellComponent />
         <RentComponent />{" "}
       </div>
+      <Feedback />
       <Footer />
     </div>
   );
