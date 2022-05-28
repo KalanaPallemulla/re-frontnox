@@ -6,7 +6,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-mainLightBrown top-0 z-50">
+      <nav className="bg-mainLightBrown top-0 z-50 fixed w-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -23,7 +23,7 @@ function Navbar() {
                     <Link to="/">Home</Link>
                   </div>
                   <div className="hover:bg-mainDarkBrown text-white px-3 py-2 rounded-md text-sm font-medium AF">
-                    <Link to="/">Rent</Link>
+                    <Link to="/rent">Rent</Link>
                   </div>
                   <div className="hover:bg-mainDarkBrown text-white px-3 py-2 rounded-md text-sm font-medium AF">
                     <Link to="/">Sell</Link>
@@ -105,7 +105,7 @@ function Navbar() {
                   Home
                 </Link>
                 <Link
-                  to="/"
+                  to="/rent"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Rent

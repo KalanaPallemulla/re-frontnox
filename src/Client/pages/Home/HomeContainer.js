@@ -9,20 +9,24 @@ import SellComponent from "./components/SellComponent";
 import RentComponent from "./components/RentComponent";
 import Footer from "../../components/Footer";
 import Feedback from "./components/Feedback";
+import Navbar from "../../components/Navbar";
 
 const HomeContainer = () => {
   return (
-    <div className="">
-      <WelcomeImage />
-      <SubCard />
-      <AboutComponent />
-      <div className="bg-brown-50">
-        <SellComponent />
-        <RentComponent />{" "}
+    <>
+      <Navbar />
+      <div className="">
+        <WelcomeImage />
+        <SubCard />
+        <AboutComponent />
+        <div className="bg-brown-50">
+          <SellComponent />
+          <RentComponent />{" "}
+        </div>
+        <Feedback />
+        <Footer />
       </div>
-      <Feedback />
-      <Footer />
-    </div>
+    </>
   );
 };
 
