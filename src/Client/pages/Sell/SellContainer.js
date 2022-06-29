@@ -12,7 +12,7 @@ const SellContainer = () => {
 
       <div className="h-full w-screen mt-16 bg-white">
         <div className="sm:grid sm:grid-cols-3">
-          <div className="p-4 top-0 left-0">
+          <div className="px-4 pt-3 top-0 left-0 mt-8">
             <FilterSection />
           </div>
           <div className="sm:col-span-2 mt-8">

@@ -1,6 +1,11 @@
 import React, { Fragment, useState } from "react";
 
-import { rentTypes, rentValuesMin } from "../../../../utils/searchHelpers";
+import {
+  locations,
+  rentTypes,
+  rentValuesMax,
+  rentValuesMin,
+} from "../../../../utils/searchHelpers";
 
 const FilterSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,11 +13,19 @@ const FilterSection = () => {
   return (
     <>
       <div className="shadow-md  p-4">
-        <div className="font-sans md:text-3xl text-2xl md:pt-8 font-bold text-mainDarkBrown text-center">
+        <div className="font-sans md:text-3xl text-2xl md:pt-8 font-bold text-mainLightBrown text-center">
           Let's search what you want to rent
         </div>
-        <div>
-          <div>
+        <div className="mt-8 flex items-center justify-center">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="border border-mainLightBrown py-2 px-4 rounded-full text-mainLightBrown hover:text-white hover:bg-mainLightBrown"
+          >
+            {!isOpen ? "Filters" : "Close filters"}
+          </button>
+        </div>
+        <div className={!isOpen ? `hidden` : "block"}>
+          <div className="mt-4">
             <label
               for="rentType"
               className="block text-sm font-medium text-gray-700"
@@ -27,7 +40,23 @@ const FilterSection = () => {
             </select>
           </div>
           <div>
-            <div className="">
+            <div className="mt-4">
+              <label
+                for="rentMinValue"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Location
+              </label>
+              <select className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <option>Select location</option>
+                {locations.map((obj) => (
+                  <option value={obj.value}>{obj.type}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+          <div>
+            <div className="mt-4">
               <label
                 for="rentMinValue"
                 className="block text-sm font-medium text-gray-700"
@@ -35,8 +64,24 @@ const FilterSection = () => {
                 Min rent value
               </label>
               <select className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                <option>Select type</option>
+                <option>Select value</option>
                 {rentValuesMin.map((obj) => (
+                  <option value={obj.value}>{obj.type}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+          <div>
+            <div className="mt-4">
+              <label
+                for="rentMinValue"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Max rent value
+              </label>
+              <select className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <option>Select value</option>
+                {rentValuesMax.map((obj) => (
                   <option value={obj.value}>{obj.type}</option>
                 ))}
               </select>
