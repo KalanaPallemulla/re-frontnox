@@ -19,21 +19,36 @@ function Navbar() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex  items-baseline space-x-4">
-                  <div className="hover:bg-mainDarkBrown text-white px-3 py-2 rounded-md text-sm font-medium AF">
+                  <Link
+                    to="/"
+                    className="hover:bg-mainDarkBrown text-white px-3 py-2 rounded-md text-sm font-medium AF"
+                  >
                     <Link to="/">Home</Link>
-                  </div>
-                  <div className="hover:bg-mainDarkBrown text-white px-3 py-2 rounded-md text-sm font-medium AF">
+                  </Link>
+                  <Link
+                    to="/rent"
+                    className="hover:bg-mainDarkBrown text-white px-3 py-2 rounded-md text-sm font-medium AF"
+                  >
                     <Link to="/rent">Rent</Link>
-                  </div>
-                  <div className="hover:bg-mainDarkBrown text-white px-3 py-2 rounded-md text-sm font-medium AF">
-                    <Link to="/">Sell</Link>
-                  </div>
-                  <div className="hover:bg-mainDarkBrown text-white px-3 py-2 rounded-md text-sm font-medium AF">
+                  </Link>
+                  <Link
+                    to="/sell"
+                    className="hover:bg-mainDarkBrown text-white px-3 py-2 rounded-md text-sm font-medium AF"
+                  >
+                    <Link to="/sell">Sell</Link>
+                  </Link>
+                  <Link
+                    to="/"
+                    className="hover:bg-mainDarkBrown text-white px-3 py-2 rounded-md text-sm font-medium AF"
+                  >
                     <Link to="/">About</Link>
-                  </div>
-                  <div className="hover:bg-mainDarkBrown text-white px-3 py-2 rounded-md text-sm font-medium AF">
+                  </Link>
+                  <Link
+                    to="/"
+                    className="hover:bg-mainDarkBrown text-white px-3 py-2 rounded-md text-sm font-medium AF"
+                  >
                     <Link to="/">Contact</Link>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -111,7 +126,7 @@ function Navbar() {
                   Rent
                 </Link>
                 <Link
-                  to="/"
+                  to="/sell"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Sell

@@ -2,7 +2,7 @@ import React from "react";
 import Home from "../../../assets/Home3.jpeg";
 import { BsFillTagFill } from "react-icons/bs";
 
-const EstateCard = () => {
+const EstateCard = ({ id }) => {
   return (
     <div className="p-1">
       <div

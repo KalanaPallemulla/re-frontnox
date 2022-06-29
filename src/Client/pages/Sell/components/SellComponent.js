@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Home from "../../../assets/Home3.jpeg";
 
-const RentComponent = ({ index, id, type }) => {
+const SellComponent = ({ index, id, type }) => {
   const [show, setShow] = useState(false);
   let green = "border-green-500";
   let blue = "border-blue-500";
@@ -42,7 +42,7 @@ const RentComponent = ({ index, id, type }) => {
                   Size : <span className="text-gray-700">10 Purchase</span>
                 </h1>
                 <h1 className="text-gray-800 AF text-md">
-                  Beds : <span className="text-gray-700">2</span>
+                  Type : <span className="text-gray-700">Home</span>
                 </h1>
                 <h1 className="text-gray-800 AF text-md">
                   Bath : <span className="text-gray-700">1</span>
@@ -56,4 +56,4 @@ const RentComponent = ({ index, id, type }) => {
   );
 };
 
-export default RentComponent;
+export default SellComponent;

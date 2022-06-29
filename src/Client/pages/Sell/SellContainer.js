@@ -2,9 +2,9 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import FilterSection from "./components/FilterSection";
-import RentComponent from "./components/RentComponent";
+import SellComponent from "./components/SellComponent";
 
-const RentContainer = () => {
+const SellContainer = () => {
   return (
     <>
       <Navbar />
@@ -18,28 +18,28 @@ const RentContainer = () => {
           <div className="sm:col-span-2 mt-8">
             <div className="sm:grid sm:grid-cols-2">
               <div className="flex justify-center mt-4 ">
-                <RentComponent index={1} id="1234" type="rent" />
+                <SellComponent index={1} id="9876" type="sell" />
               </div>
               <div className="flex justify-center mt-4">
-                <RentComponent index={2} id="1234" type="rent" />
+                <SellComponent index={2} id="9876" type="sell" />
               </div>
               <div className="flex justify-center mt-4">
-                <RentComponent index={3} id="1234" type="rent" />
+                <SellComponent index={3} id="9876" type="sell" />
               </div>
               <div className="flex justify-center mt-4">
-                <RentComponent index={4} id="1234" type="rent" />
+                <SellComponent index={4} id="9876" type="sell" />
               </div>
               <div className="flex justify-center mt-4 ">
-                <RentComponent index={1} id="1234" type="rent" />
+                <SellComponent index={1} id="9876" type="sell" />
               </div>
               <div className="flex justify-center mt-4">
-                <RentComponent index={2} id="1234" type="rent" />
+                <SellComponent index={2} id="9876" type="sell" />
               </div>
               <div className="flex justify-center mt-4">
-                <RentComponent index={3} id="1234" type="rent" />
+                <SellComponent index={3} id="9876" type="sell" />
               </div>
               <div className="flex justify-center mt-4">
-                <RentComponent index={4} id="1234" type="rent" />
+                <SellComponent index={4} id="9876" type="sell" />
               </div>
             </div>
           </div>
@@ -50,4 +50,4 @@ const RentContainer = () => {
   );
 };
 
-export default RentContainer;
+export default SellContainer;
