@@ -1,15 +1,10 @@
 import React, { Fragment, useState } from "react";
-import Select from "react-select";
-import { Menu, Transition } from "@headlessui/react";
+
+import { rentTypes } from "../../../../utils/searchHelpers";
 
 const FilterSection = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [rentTypes] = useState([
-    { type: "Home", value: "home" },
-    { type: "Apartment", value: "apartment" },
-    { type: "Building", value: "building" },
-    { type: "Store", value: "store" },
-  ]);
+
   return (
     <>
       <div className="shadow-md  p-4">
