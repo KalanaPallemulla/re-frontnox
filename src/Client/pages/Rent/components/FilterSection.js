@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 
-import { rentTypes } from "../../../../utils/searchHelpers";
+import { rentTypes, rentValuesMin } from "../../../../utils/searchHelpers";
 
 const FilterSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +12,9 @@ const FilterSection = () => {
           Let's search what you want to rent
         </div>
         <div>
-          <div className="">
+          <div>
             <label
-              for="country"
+              for="rentType"
               className="block text-sm font-medium text-gray-700"
             >
               Type
@@ -25,6 +25,22 @@ const FilterSection = () => {
                 <option value={obj.value}>{obj.type}</option>
               ))}
             </select>
+          </div>
+          <div>
+            <div className="">
+              <label
+                for="rentMinValue"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Min rent value
+              </label>
+              <select className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <option>Select type</option>
+                {rentValuesMin.map((obj) => (
+                  <option value={obj.value}>{obj.type}</option>
+                ))}
+              </select>
+            </div>
           </div>
         </div>
       </div>
