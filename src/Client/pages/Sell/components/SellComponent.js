@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Home from "../../../assets/Home3.jpeg";
 
 const SellComponent = ({ index, id, type }) => {
-  const [show, setShow] = useState(false);
   let green = "border-green-500";
   let blue = "border-blue-500";
   let red = "border-red-500";
